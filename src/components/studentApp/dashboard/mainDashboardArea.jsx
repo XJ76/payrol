@@ -17,7 +17,7 @@ function MainDashboardArea() {
   return (
     <div className="bg-white h-screen">
       <div className="font-mainFont">
-        <h3 className="text-center font-bold text-3xl pt-2">TorryBlue Payrol Management</h3>
+        <h3 className="text-center font-bold text-3xl pt-2">Dasboard Management</h3>
       </div>
 
       <Insights/>
