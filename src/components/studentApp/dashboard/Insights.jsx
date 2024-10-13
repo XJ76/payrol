@@ -3,29 +3,29 @@ import { useState } from "react";
 const Insights = () => {
   const [payrollData, setPayrollData] = useState([
     {
-      title: "Pyrol Balance",
-      value: "$20.00",
+      title: "Vehicle Repair Tracking",
+      value: "100%",
       icon: <svg xmlns="http://www.w3.org/2000/svg" className="w-3 h-3 ml-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="3"><path strokeLinecap="round" strokeLinejoin="round" d="M7 11l5-5m0 0l5 5m-5-5v12" /></svg>,
       transition: "hover:scale-105 duration-500",
       className: "bg-white border border-gray-200 rounded-xl transition-transform hover:scale-105 duration-500",
     },
     {
-      title: "Pyrol Usage",
-      value: "+ 30.00",
+      title: "Mechanic Allocation",
+      value: "95%",
       icon: <svg xmlns="http://www.w3.org/2000/svg" className="w-3 h-3 ml-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="3"><path strokeLinecap="round" strokeLinejoin="round" d="M7 11l5-5m0 0l5 5m-5-5v12" /></svg>,
       transition: "hover:scale-95 duration-500",
       className: "bg-white border border-gray-200 rounded-xl transition-transform hover:scale-95 duration-500",
     },
     {
-      title: "Pyrol Efficiency",
-      value: "+ 20.00",
+      title: "Vehicle Schedules",
+      value: "90%",
       icon: <svg xmlns="http://www.w3.org/2000/svg" className="w-3 h-3 ml-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="3"><path strokeLinecap="round" strokeLinejoin="round" d="M7 11l5-5m0 0l5 5m-5-5v12" /></svg>,
       transition: "hover:scale-105 duration-500",
       className: "bg-white border border-gray-200 rounded-xl transition-transform hover:scale-105 duration-500",
     },
     {
-      title: "Pyrol Savings",
-      value: "0%",
+      title: "Customer Satisfaction",
+      value: "85%",
       icon: <svg xmlns="http://www.w3.org/2000/svg" className="w-3 h-3 ml-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="3"><path strokeLinecap="round" strokeLinejoin="round" d="M7 11l5-5m0 0l5 5m-5-5v12" /></svg>,
       transition: "hover:scale-95 duration-500",
       className: "bg-white border border-gray-200 rounded-xl transition-transform hover:scale-95 duration-500",
