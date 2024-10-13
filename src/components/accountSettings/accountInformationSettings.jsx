@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-//import { Text } from '@nextui-org/react'
 
 function AccountInformationSettings() {
   //hooks
@@ -20,7 +19,7 @@ function AccountInformationSettings() {
             <div>
               <div className="mt-2">
                 <h3 className="text-xl font-bold text-gray-900">
-                  Payroll System Information
+                  Workshop Management System Information
                 </h3>
               </div>
 
@@ -32,7 +31,7 @@ function AccountInformationSettings() {
                         htmlFor=""
                         className="text-base font-medium text-gray-900 font-pj"
                       >
-                        Admin Name
+                        Workshop Manager Name
                       </label>
                       <div className="mt-2">
                         <h1
@@ -78,7 +77,7 @@ function AccountInformationSettings() {
                             className="block w-full py-4 pl-2 text-gray-900 placeholder-gray-600 bg-white  rounded-xl"
                           >
                             {" "}
-                            Finance
+                            Maintenance
                           </h1>
                         </div>
                       </div>
@@ -96,7 +95,7 @@ function AccountInformationSettings() {
                         className="block w-full py-4 pl-2 text-gray-900 placeholder-gray-600 bg-white  rounded-xl"
                       >
                         {" "}
-                        Accountant
+                        Workshop Manager
                       </h1>
                     </div>
                   </div>
