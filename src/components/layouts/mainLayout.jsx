@@ -20,54 +20,53 @@ const MainLayout = () => {
         <Link to="/">
           <SidebarItem
             icon={<LayoutDashboard size={20} />}
-            text="Payroll Dashboard"
-            active={currentPath === "/"}
+            text="Dashboard"
+            active={currentPath === "/dashboard"}
           />
         </Link>
-        <Link to="/employee/registration">
-          <SidebarItem
-            icon={<UserPlus />}
-            text="New Employee"
-            active={currentPath === "/employee/registration"}
-          />
-        </Link>
-        <Link to="/employee/paymenthistory">
-          <SidebarItem
-            icon={<History />}
-            text="Payment History"
-            active={currentPath === "/employee/paymenthistory"}
-          />
-        </Link>
-        <Link to="/employee/timetable">
+        <Link to="/vehicle-registration">
           <SidebarItem
             icon={<Layers size={20} />}
-            text="Employee Schedule"
-            active={currentPath === "/employee/timetable"}
+            text="Vehicle Registration"
+            active={currentPath === "/vehicle-registration"}
           />
         </Link>
-        <Link to="/employee/studynotes">
+        <Link to="/job-allocation">
+          <SidebarItem
+            icon={<UserPlus />}
+            text="Job Allocation"
+            active={currentPath === "/job-allocation"}
+          />
+        </Link>
+        <Link to="/quotation-management">
+          <SidebarItem
+            icon={<History />}
+            text="Quotation Management"
+            active={currentPath === "/quotation-management"}
+          />
+        </Link>
+        <Link to="/invoicing-and-payment">
           <SidebarItem
             icon={<BookOpen size={20} />}
-            text="Employee Resources"
-            active={currentPath === "/employee/studynotes"}
+            text="Invoicing and Payment"
+            active={currentPath === "/invoicing-and-payment"}
           />
         </Link>
-        
-        <Link to="/employee/myresults">
-          <SidebarItem
-            icon={<CandlestickChart />}
-            text="Employee Performance"
-            active={currentPath === "/employee/myresults"}
-          />
-        </Link>
-         <Link to="/employee/clubs">
+        <Link to="/workshop-scheduling">
           <SidebarItem
             icon={<Blend />}
-            text="Employee Clubs"
-            active={currentPath === "/employee/clubs"}
+            text="Workshop Scheduling"
+            active={currentPath === "/workshop-scheduling"}
           />
         </Link>
-     </Sidebar>
+        <Link to="/vehicle-tracking">
+          <SidebarItem
+            icon={<CandlestickChart />}
+            text="Vehicle Tracking"
+            active={currentPath === "/vehicle-tracking"}
+          />
+        </Link>
+      </Sidebar>
       <div className="flex flex-col flex-1">
         <header className="bg-white border-b border-gray-200 fixed w-full top-0 z-10">
           <div className="px-4 mx-auto">
@@ -97,10 +96,9 @@ const MainLayout = () => {
                     type="search"
                     id="search"
                     className="block w-full py-2 pl-10 border border-gray-300 rounded-lg focus:ring-indigo-600 focus:border-indigo-600 sm:text-sm"
-                    placeholder="Search Payroll Portal..."
+                    placeholder="Search Workshop Portal..."
                   />
                 </div>
-               
               </div>
               <div className="flex items-center ml-auto space-x-6">
                 <button
