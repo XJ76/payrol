@@ -34,7 +34,7 @@ function SecurityandPasswordSettings() {
             <div className="px-2 sm:px-6">
               <div className="">
                 <h3 className="text-xl pt-2 font-bold text-gray-900">
-                  Payroll System Admin Security Settings
+                  Workshop Management System Security Settings
                 </h3>
               </div>
 
