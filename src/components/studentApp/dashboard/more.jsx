@@ -1,6 +1,6 @@
 const More = () => {
   return (
-    <div className='pl-14'>Nothing more... Go to school!</div>
+    <div className='pl-14'></div>
   )
 }
 
