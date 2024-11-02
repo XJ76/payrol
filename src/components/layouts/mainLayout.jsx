@@ -24,11 +24,11 @@ const MainLayout = () => {
             active={currentPath === "/dashboard"}
           />
         </Link>
-        <Link to="/vehicle-registration">
+        <Link to="/registration">
           <SidebarItem
             icon={<Layers size={20} />}
             text="Vehicle Registration"
-            active={currentPath === "/vehicle-registration"}
+            active={currentPath === "/registration"}
           />
         </Link>
         <Link to="/job-allocation">
@@ -45,18 +45,18 @@ const MainLayout = () => {
             active={currentPath === "/quotation-management"}
           />
         </Link>
-        <Link to="/invoicing-and-payment">
+        <Link to="/invoice">
           <SidebarItem
             icon={<BookOpen size={20} />}
             text="Invoicing and Payment"
-            active={currentPath === "/invoicing-and-payment"}
+            active={currentPath === "/invoice"}
           />
         </Link>
-        <Link to="/workshop-scheduling">
+        <Link to="/schedualing">
           <SidebarItem
             icon={<Blend />}
             text="Workshop Scheduling"
-            active={currentPath === "/workshop-scheduling"}
+            active={currentPath === "/schedualing"}
           />
         </Link>
         <Link to="/vehicle-tracking">
