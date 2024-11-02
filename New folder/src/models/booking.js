@@ -12,6 +12,13 @@ const bookingSchema = new Schema({
     required: true,
     trim: true
   },
+  
+  mechanicName: {
+    type: String,
+    required: true,
+    trim: true
+  },
+
   model: {
     type: String,
     required: true,

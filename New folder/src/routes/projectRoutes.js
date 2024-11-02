@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const { signup, signin } = require('../controllers/auth');
-const { createBooking, getBookings, getBookingById, updateBooking, deleteBooking } = require('../controllers/booking');
+const { createBooking, getBookings, getBookingById, updateBooking, deleteBooking, assignMechanicToBooking } = require('../controllers/booking');
 const { createMechanic, getAllMechanics, getMechanicById, updateMechanicById, deleteMechanicById } = require('../controllers/mechanic');
 
 // Signup route
@@ -16,6 +16,7 @@ router.get('/bookings', getBookings);
 router.get('/bookings/:id', getBookingById);
 router.put('/bookings/:id', updateBooking);
 router.delete('/bookings/:id', deleteBooking);
+router.post('/bookings/:id/assign-mechanic', assignMechanicToBooking); // New route for assigning mechanic to booking
 
 // Mechanic routes
 router.post('/mechanics', createMechanic);

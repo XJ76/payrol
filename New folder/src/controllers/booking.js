@@ -1,4 +1,5 @@
 const Booking = require('../models/booking');
+const Mechanic = require('../models/mechanic');
 
 const createBooking = async (req, res) => {
   try {
@@ -85,11 +86,34 @@ const deleteBooking = async (req, res) => {
   }
 };
 
+const assignMechanicToBooking = async (req, res) => {
+  try {
+    const { mechanicId } = req.body;
+    const booking = await Booking.findById(req.params.id);
+    if (!booking) {
+      return res.status(404).json({ message: 'Booking not found' });
+    }
+
+    const mechanic = await Mechanic.findById(mechanicId);
+    if (!mechanic) {
+      return res.status(404).json({ message: 'Mechanic not found' });
+    }
+
+    booking.mechanicName = mechanic.name;
+    await booking.save();
+
+    res.status(200).json(booking);
+  } catch (error) {
+    res.status(500).json({ message: 'Server error', error });
+  }
+};
+
 module.exports = {
   createBooking,
   getBookings,
   getBookingById,
   updateBooking,
-  deleteBooking
+  deleteBooking,
+  assignMechanicToBooking
 };
 
