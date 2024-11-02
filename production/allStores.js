@@ -119,6 +119,18 @@ const useStore = create((set) => ({
       console.error('Delete mechanic error:', error);
     }
   },
+  assignMechanicToBooking: async (bookingId, mechanicId) => {
+    try {
+      const response = await axios.post(`${BACKEND_LOCAL_URL}/api/bookings/${bookingId}/assignMechanic`, { mechanicId });
+      set((state) => ({
+        bookings: state.bookings.map((booking) =>
+          booking._id === bookingId ? response.data : booking
+        ),
+      }));
+    } catch (error) {
+      console.error('Assign mechanic to booking error:', error);
+    }
+  },
 }));
 
 export default useStore;
